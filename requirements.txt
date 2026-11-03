@@ -1,0 +1,6 @@
+numpy>=1.26
+scikit-learn>=1.4
+faiss-cpu>=1.8
+matplotlib>=3.8
+pytest>=8
+# optional: sentence-transformers (set BIOMED_RAG_EMBEDDER=st)

@@ -1,0 +1,22 @@
+[
+ {"q": "What speed of sound should tissue-mimicking phantom material have?", "rel": [["phantom_qa_protocol","Speed of sound"]], "facts": ["1540"]},
+ {"q": "What attenuation coefficient is targeted for the phantom?", "rel": [["phantom_qa_protocol","Attenuation"]], "facts": ["0.5 dB/cm/MHz"]},
+ {"q": "How much depth of penetration loss triggers a service review?", "rel": [["phantom_qa_protocol","Attenuation"]], "facts": ["1 cm"]},
+ {"q": "What axial resolution is expected for a 7.5 MHz linear probe?", "rel": [["phantom_qa_protocol","Axial and lateral resolution"]], "facts": ["0.5 mm"]},
+ {"q": "What is an acceptable dead zone for linear arrays?", "rel": [["phantom_qa_protocol","Dead zone"]], "facts": ["3 mm"]},
+ {"q": "What do vertical dark bands in the uniform region indicate?", "rel": [["phantom_qa_protocol","Uniformity and dropouts"]], "facts": ["dead or weak"]},
+ {"q": "Why add glycerol to an agar phantom?", "rel": [["phantom_fabrication","Materials"]], "facts": ["speed of sound"]},
+ {"q": "How do you avoid air bubbles when making the phantom?", "rel": [["phantom_fabrication","Procedure"]], "facts": ["vacuum"]},
+ {"q": "When should a dehydrated agar phantom be discarded?", "rel": [["phantom_fabrication","Storage and shelf life"]], "facts": ["5%"]},
+ {"q": "How are stiff inclusions made for elastography?", "rel": [["phantom_fabrication","Inclusions"]], "facts": ["4%"]},
+ {"q": "What disinfection level do endocavitary probes need?", "rel": [["probe_reprocessing","Spaulding classification"]], "facts": ["high-level"]},
+ {"q": "What should happen to a probe with a cracked lens?", "rel": [["probe_reprocessing","Workflow"]], "facts": ["removed from service"]},
+ {"q": "Why avoid alcohol wipes on the transducer lens?", "rel": [["probe_reprocessing","Common failures"]], "facts": ["degrade"]},
+ {"q": "What is the maximum mechanical index allowed?", "rel": [["acoustic_output_safety","Limits"]], "facts": ["1.9"]},
+ {"q": "How is the mechanical index calculated?", "rel": [["acoustic_output_safety","Indices"]], "facts": ["square root"]},
+ {"q": "Which contrast metric is robust to dynamic range transformations?", "rel": [["image_quality_metrics","Generalized CNR"]], "facts": ["gCNR"]},
+ {"q": "What is the expected speckle SNR for fully developed speckle?", "rel": [["image_quality_metrics","Speckle SNR"]], "facts": ["1.91"]},
+ {"q": "How should Dice and HD95 be reported to avoid data leakage?", "rel": [["image_quality_metrics","Segmentation metrics"]], "facts": ["per-patient"]},
+ {"q": "What is the QA status of probe P-102 and why?", "rel": [["probes","P-102"],["phantom_qa_protocol","Attenuation"]], "facts": ["fail", "4.1"]},
+ {"q": "Which probes are flagged for review?", "rel": [["probes","P-401"]], "facts": ["P-401"]}
+]

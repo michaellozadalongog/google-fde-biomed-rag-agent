@@ -1,0 +1,217 @@
+{
+  "retrieval": {
+    "lexical": {
+      "recall@4": 0.975,
+      "mrr": 0.8875,
+      "ndcg@4": 0.9218306505776613,
+      "p50_ms": 0.3259150034864433,
+      "p95_ms": 0.384065110119991
+    },
+    "dense": {
+      "recall@4": 0.975,
+      "mrr": 0.8875,
+      "ndcg@4": 0.9218306505776613,
+      "p50_ms": 0.4406395019032061,
+      "p95_ms": 0.6711590503982734
+    },
+    "hybrid": {
+      "recall@4": 0.975,
+      "mrr": 0.8875,
+      "ndcg@4": 0.9218306505776613,
+      "p50_ms": 0.7352195025305264,
+      "p95_ms": 0.8345374997588806
+    }
+  },
+  "end_to_end": {
+    "fact_hit_rate": 0.9,
+    "groundedness": 0.99225,
+    "critic_retry_rate": 0.05,
+    "p50_ms": 1.8115,
+    "p95_ms": 2.387600000000001,
+    "n": 20,
+    "embedder": "tfidf-lsa",
+    "chunks": 27
+  },
+  "per_question": [
+    {
+      "q": "What speed of sound should tissue-mimicking phantom material have?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.857,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 2.058
+    },
+    {
+      "q": "What attenuation coefficient is targeted for the phantom?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.5,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 2.132
+    },
+    {
+      "q": "How much depth of penetration loss triggers a service review?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.714,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.872
+    },
+    {
+      "q": "What axial resolution is expected for a 7.5 MHz linear probe?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 1.0,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.884
+    },
+    {
+      "q": "What is an acceptable dead zone for linear arrays?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 1.0,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.742
+    },
+    {
+      "q": "What do vertical dark bands in the uniform region indicate?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.667,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 2.086
+    },
+    {
+      "q": "Why add glycerol to an agar phantom?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.6,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 2.316
+    },
+    {
+      "q": "How do you avoid air bubbles when making the phantom?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.5,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.897
+    },
+    {
+      "q": "When should a dehydrated agar phantom be discarded?",
+      "fact_hit": false,
+      "steps": 2,
+      "coverage": 0.25,
+      "groundedness": 1.0,
+      "accept": false,
+      "latency_ms": 3.748
+    },
+    {
+      "q": "How are stiff inclusions made for elastography?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.5,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.566
+    },
+    {
+      "q": "What disinfection level do endocavitary probes need?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.8,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.72
+    },
+    {
+      "q": "What should happen to a probe with a cracked lens?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.75,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.659
+    },
+    {
+      "q": "Why avoid alcohol wipes on the transducer lens?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.667,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.814
+    },
+    {
+      "q": "What is the maximum mechanical index allowed?",
+      "fact_hit": false,
+      "steps": 1,
+      "coverage": 0.75,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.693
+    },
+    {
+      "q": "How is the mechanical index calculated?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.667,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.551
+    },
+    {
+      "q": "Which contrast metric is robust to dynamic range transformations?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.667,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.595
+    },
+    {
+      "q": "What is the expected speckle SNR for fully developed speckle?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 1.0,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 1.714
+    },
+    {
+      "q": "How should Dice and HD95 be reported to avoid data leakage?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.833,
+      "groundedness": 1.0,
+      "accept": true,
+      "latency_ms": 2.01
+    },
+    {
+      "q": "What is the QA status of probe P-102 and why?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.8,
+      "groundedness": 0.889,
+      "accept": true,
+      "latency_ms": 1.796
+    },
+    {
+      "q": "Which probes are flagged for review?",
+      "fact_hit": true,
+      "steps": 1,
+      "coverage": 0.667,
+      "groundedness": 0.956,
+      "accept": true,
+      "latency_ms": 1.809
+    }
+  ]
+}

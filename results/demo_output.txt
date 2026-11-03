@@ -1,0 +1,25 @@
+
+Q: What is the QA status of probe P-102 and why?
+A: P-102 (linear, 10.0 MHz): QA status 'fail' on 2026-10-20; dead zone 2.8 mm, axial res 0.4 mm, DOP 4.1 cm (baseline 5.5 cm). DOP dropped >1 cm from baseline, which triggers service review per QA protocol. Store images with the QA log. This protocol defines weekly quality assurance (QA) checks for B-mode ultrasound systems using a tissue-mimicking phantom. Any persistent vertical dropout fails the test and the probe must be removed from clinical service.
+Citations: ['probes#P-102', 'phantom_qa_protocol#6', 'phantom_qa_protocol#0', 'phantom_qa_protocol#5']
+Critic: {'coverage': 0.8, 'groundedness': 0.889, 'accept': True} | steps=1 | latency=2.667 ms | trace=43f5a202206c
+
+Q: What disinfection level do endocavitary probes need?
+A: Endocavitary probes contact mucous membranes, are semi-critical, and require high-level disinfection (HLD) even when a probe cover is used, because covers can have perforations. Probes contacting intact skin are non-critical and require low-level disinfection.
+Citations: ['probe_reprocessing#0']
+Critic: {'coverage': 0.8, 'groundedness': 1.0, 'accept': True} | steps=1 | latency=1.937 ms | trace=bc2e5714a2df
+
+== Retrieval (k=4) ==
+lexical  recall@4=0.975 mrr=0.887 ndcg@4=0.922 p95=0.38ms
+dense    recall@4=0.975 mrr=0.887 ndcg@4=0.922 p95=0.67ms
+hybrid   recall@4=0.975 mrr=0.887 ndcg@4=0.922 p95=0.83ms
+
+== End-to-end agent ==
+fact_hit_rate      0.900
+groundedness       0.992
+critic_retry_rate  0.050
+p50_ms             1.812
+p95_ms             2.388
+n                  20
+embedder           tfidf-lsa
+chunks             27
